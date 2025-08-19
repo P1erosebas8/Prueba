@@ -1,17 +1,46 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    /* Prueba tambien con row */
-    flex-wrap: wrap;
-    height: 300px;
-    gap: 10px;
-    background: #f0f0f0;
-    padding: 20px;
+form{
+    width: 300px;
+    background-color: #737ca1;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 16px;
+}
+form label{
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+}
+form input[type="text"], input[type="email"]{
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+}
+form textarea{
+    width: 98%;
+    height: 75px;
+    border-radius: 5px;
+    display: block;
+    margin: 8px;
+    border: 1px solid black;
+    resize: none;
+
+}
+form input[type="submit"]{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: block;
+    color: white;
+    height: 50px;
+    background-color: rgb(12, 12, 12);
+}
+form input[type="submit"]:hover{
+    background-color: #939497;
+    cursor: pointer;
 }
 
-.item {
-    background: lightblue;
-    padding: 20px;
-    flex: 1 0 80px;
-    text-align: center;
-}
+
