@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background: #f0f0f0;
+    padding: 20px;
+}
+
+.item {
+    background: lightblue;
+    padding: 20px;
+    margin: 10px;
+    width: 80px;
+    text-align: center;
+}
