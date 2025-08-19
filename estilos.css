@@ -1,35 +1,51 @@
-form{
-    width: 300px;
+* {
+    box-sizing: border-box;
+}
+
+form {
+    width: 100%;
+    max-width: 480px;
     background-color: #737ca1;
     border-radius: 10px;
-    margin: 50px auto;
+    margin: 24px auto;
     padding: 16px;
 }
-form label{
-    width: 72px;
-    font-weight: bold;
-    display: inline-block;
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
 }
-form input[type="text"], input[type="email"]{
-    width: 180px;
-    padding: 3px 10px;
+
+form label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    display: block;
+}
+
+form input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
     border: 1px solid white;
     border-radius: 5px;
     background-color: white;
     border: 1px solid black;
-    display: inline-block;
+    display: block;
+    margin-left: 0;
 }
-form textarea{
-    width: 98%;
-    height: 75px;
+
+form textarea {
+    width: 100%;
+    min-height: 90px;
     border-radius: 5px;
     display: block;
     margin: 8px;
     border: 1px solid black;
-    resize: none;
+    resize: vertical;
 
 }
-form input[type="submit"]{
+
+form input[type="submit"] {
     width: 100%;
     border-radius: 5px;
     border: 1px solid black;
@@ -37,10 +53,49 @@ form input[type="submit"]{
     color: white;
     height: 50px;
     background-color: rgb(12, 12, 12);
+    cursor: pointer;
 }
-form input[type="submit"]:hover{
+
+form input[type="submit"]:hover {
     background-color: #939497;
     cursor: pointer;
 }
 
+@media (min-width: 640px) {
+    form label {
+        display: inline-block;
+        width: 150px;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
 
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+        width: 65%;
+        padding: 10px 12px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: white;
+        border: 1px solid black;
+        display: inline-block;
+    }
+
+    form textarea {
+        width: 99%;
+        vertical-align: top;
+        min-height: 120px;
+        resize: none;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid black;
+        display: block;
+        color: white;
+        height: 50px;
+        background-color: rgb(12, 12, 12);
+        cursor: pointer;
+    }
+}
