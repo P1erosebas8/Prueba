@@ -1,6 +1,10 @@
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    /* Prueba tambien con row */
+    flex-wrap: wrap;
+    height: 300px;
+    gap: 10px;
     background: #f0f0f0;
     padding: 20px;
 }
@@ -8,7 +12,6 @@
 .item {
     background: lightblue;
     padding: 20px;
-    margin: 10px;
-    width: 80px;
+    flex: 1 0 80px;
     text-align: center;
 }
